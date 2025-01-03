@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena Museum of Science and Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A1A1A',
+                        secondary: '#F2F2F2',
+                        
+                        'idk': '#FFA500',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-primary font-sans">
+    <header class="fixed w-full z-50 bg-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">ATHENA</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#exhibitions" class="hover:text-cyan-700 transition duration-300">Exhibitions</a>
+                    <a href="#visit" class="hover:text-cyan-700 transition duration-300">Visit</a>
+                    <a href="#about" class="hover:text-cyan-700 transition duration-300">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://cdn.pixabay.com/photo/2021/12/30/14/49/metaverse-6904045_640.png" alt="Metaverse Background" class="w-full h-full object-cover filter brightness-50">
+            </div>
+            <div class="relative z-10 text-center text-white px-4">
+                <h1 class="text-6xl md:text-9xl font-extrabold mb-4 tracking-widest transform scale-y-150">ATHENA</h1>
+                <p class="text-xl md:text-3xl mb-8 font-light">Museum of Science and Technology</p>
+                <p class="text-lg md:text-2xl mb-12 font-semibold text-cyan-700">Powered by EaseEntry</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://easeentry.streamlit.app" target="_blank" class="bg-white text-primary font-bold py-3 px-8 hover:bg-cyan-700 hover:text-white transition duration-300 transform hover:scale-105">AI Bookings</a>
+                    <a href="https://athena-payment.vercel.app/" target="_blank" class="bg-cyan-700 text-white font-bold py-3 px-8 hover:bg-idk transition duration-300 transform hover:scale-105">Payments</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="exhibitions" class="py-20 px-4 bg-secondary">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">Current Exhibitions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden">
+                        <img src="https://img.freepik.com/free-photo/portrait-ai-robot-urban-area_23-2151015304.jpg?semt=ais_hybrid" alt="AI Revolution" class="w-full h-96 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="text-white text-center">
+                                <h3 class="text-2xl font-bold mb-2">AI Revolution</h3>
+                                <p class="mb-4">Explore the future of artificial intelligence</p>
+                                <a href="#" class="inline-block bg-cyan-700 text-primary font-bold py-2 px-4 hover:bg-idk transition duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden">
+                        <img src="https://img.freepik.com/free-photo/astronaut-diving-digital-art_23-2151198126.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid" alt="Space Odyssey" class="w-full h-96 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="text-white text-center">
+                                <h3 class="text-2xl font-bold mb-2">Space Odyssey</h3>
+                                <p class="mb-4">Journey through the cosmos</p>
+                                <a href="#" class="inline-block bg-cyan-700 text-primary font-bold py-2 px-4 hover:bg-idk transition duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden">
+                        <img src="https://img.freepik.com/free-photo/boy-fantasy-world_23-2151732296.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid" alt="Quantum Realm" class="w-full h-96 object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="text-white text-center">
+                                <h3 class="text-2xl font-bold mb-2">Quantum Realm</h3>
+                                <p class="mb-4">Discover the mysteries of quantum physics</p>
+                                <a href="#" class="inline-block bg-cyan-700 text-primary font-bold py-2 px-4 hover:bg-idk transition duration-300">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-bookings" class="py-20 px-4 bg-black text-white overflow-hidden relative">
+            <div class="absolute inset-0 bg-[url('https://img.freepik.com/free-vector/abstract-vector-colorful-mesh-dark-background-futuristic-style-card-corrupted-point-sphere_1217-4981.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid')] opacity-10"></div>
+            <div class="container mx-auto relative z-10">
+                <h2 class="text-5xl font-bold mb-12 text-center">AI-Powered <span class="text-cyan-400">Bookings</span></h2>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0 transform hover:scale-105 transition duration-300">
+                        <img src="https://img.freepik.com/free-vector/abstract-vector-colorful-mesh-dark-background-futuristic-style-card-corrupted-point-sphere_1217-4981.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid" alt="AI Booking System" class="rounded-lg shadow-2xl" width="600" height="500">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-3xl font-semibold mb-6 text-cyan-400">Experience the Future</h3>
+                        <p class="text-xl font-semibold mb-6 text-yellow-400">powered by EaseEntry</p>
+                        <p class="text-lg leading-relaxed mb-8">
+                            Unlock a personalized museum journey with our cutting-edge AI-powered booking system. Say goodbye to long queues and hello to tailored recommendations that match your interests perfectly.
+                        </p>
+                        <ul class="mb-8 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Personalized tour suggestions
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Skip-the-line access
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Real-time availability updates
+                            </li>
+                        </ul>
+                        <a href="https://easeentry.streamlit.app" target="_blank" class="inline-block bg-cyan-500 text-black font-bold py-3 px-8 rounded-full hover:bg-cyan-400 transform hover:scale-105 transition duration-300 shadow-lg">
+                            Book Now with AI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="payments" class="py-20 px-4 bg-secondary">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">Seamless Payments</h2>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2">
+                        <img src="https://img.freepik.com/free-photo/person-using-nfc-technology-pay-bill-restaurant_23-2150039418.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid" alt="Payment Options" class="rounded-lg shadow-lg mb-8 md:mb-0">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Choose from a variety of secure payment options. Enjoy exclusive benefits with our museum membership program.
+                        </p>
+                        <a href="https://athena-payment.vercel.app/" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 hover:bg-cyan-700 hover:text-primary transition duration-300">Manage Payments</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit" class="py-20 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">Plan Your Visit</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Location</h3>
+                        <p class="mb-2">123 Science Avenue</p>
+                        <p class="mb-2">Mumbai, Maharashtra 400001</p>
+                        <p class="mb-6">India</p>
+                        <h3 class="text-2xl font-bold mb-4">Hours</h3>
+                        <p class="mb-2">Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                        <p class="mb-2">Sunday: 10:00 AM - 4:00 PM</p>
+                        <p class="mb-6">Closed on major holidays</p>
+                        <a href="#" class="inline-block bg-primary text-white font-bold py-2 px-4 hover:bg-cyan-700 hover:text-primary transition duration-300">Get Directions</a>
+                    </div>
+                    <div>
+                        <img src="https://img.freepik.com/free-photo/view-world-travel-map-with-pins_23-2149460008.jpg?ga=GA1.1.566968540.1725549131&semt=ais_hybrid" alt="Museum Map" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">ATHENA</h3>
+                    <p>Powered by EaseEntry</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Facebook</a>
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Twitter</a>
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Instagram</a>
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">YouTube</a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 Athena Museum of Science and Technology. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Terms of Service</a>
+                    <a href="#" class="hover:text-cyan-700 transition duration-300">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
